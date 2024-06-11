@@ -5,8 +5,12 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, authenticate
 from django.http import HttpResponse
 
+from django.template import engines
+from django.http import HttpResponse
+
 def Home(request):
     return render(request, 'home.html')
+
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
