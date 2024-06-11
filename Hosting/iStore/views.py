@@ -20,7 +20,7 @@ def register(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('user_login')  # Replace 'home' with the name of your home URL pattern
+            return redirect('Home')  # Replace 'home' with the name of your home URL pattern
     else:
         form = UserCreationForm()
     return render(request, 'register.html', {'form': form})

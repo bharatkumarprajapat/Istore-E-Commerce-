@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box, .register-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.login-box h2, .register-box h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.login-box form, .register-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box form .form-group, .register-box form .form-group {
+    margin-bottom: 1rem;
+}
+
+.login-box form .form-group label, .register-box form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.login-box form .form-group input, .register-box form .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box form .form-text, .register-box form .form-text {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.login-box form button, .register-box form button {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-box form button:hover, .register-box form button:hover {
+    background: #8f94fb;
+}
