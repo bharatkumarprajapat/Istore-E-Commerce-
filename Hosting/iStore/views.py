@@ -7,8 +7,9 @@ from django.http import HttpResponse
 
 from django.template import engines
 from django.http import HttpResponse
-
+import subprocess
 def Home(request):
+    # subprocess.run(['python', 'manage.py', 'collectstatic'], check=True)
     return render(request, 'home.html')
 
 def register(request):
